@@ -23,7 +23,7 @@ interface StreamEventHandlers {
 
 // 配置常量
 const API_CONFIG = {
-  BASE_URL: '/api', // 将被代理到 http://localhost/v1
+  BASE_URL: import.meta.env.DIFY_API_BASE_URL || '/api',
   TOKEN: 'app-J4pfFoGyz2qbnFo5ZMmNeAaR',
   HEADERS: {
     'Content-Type': 'application/json',
