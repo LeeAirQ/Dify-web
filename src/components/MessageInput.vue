@@ -7,7 +7,7 @@
       clearable
       type="textarea"
       resize="none"
-      rows="1"
+      :rows="1"
       autosize
       @keydown.enter.prevent="handleEnter"
       ref="inputRef"
