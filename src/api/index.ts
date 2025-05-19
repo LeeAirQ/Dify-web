@@ -113,8 +113,9 @@ class ApiClient {
       response_mode: 'streaming'
     };
     
-    // 使用相对路径，让代理处理
-    const apiUrl = '/api/chat-messages';
+     // 使用完整的API URL
+    const apiUrl = `${API_CONFIG.BASE_URL}/chat-messages`;
+    
     
     console.log('发送流式请求:', apiUrl, params);
     
