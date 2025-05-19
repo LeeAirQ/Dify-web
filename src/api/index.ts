@@ -113,9 +113,12 @@ class ApiClient {
       response_mode: 'streaming'
     };
     
-    console.log('发送流式请求:', `${API_CONFIG.BASE_URL}/chat-messages`, params);
+    // 使用相对路径，让代理处理
+    const apiUrl = '/api/chat-messages';
     
-    fetch(`${API_CONFIG.BASE_URL}/chat-messages`, {
+    console.log('发送流式请求:', apiUrl, params);
+    
+    fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
