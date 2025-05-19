@@ -20,7 +20,9 @@ export default defineConfig(({ command, mode }) => {
         '/api': {
           target: env.VITE_DIFY_API_BASE_URL || 'http://120.77.168.202/v1',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, '')
+          rewrite: (path) => path.replace(/^\/api/, ''),
+          secure: false,
+          ws: true
         }
       }
     },
