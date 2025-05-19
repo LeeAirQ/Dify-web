@@ -18,7 +18,7 @@ web端对话截图：
 ![alt text](public/imags/web4.png)
 
 ## 功能特点
-
+- vercle自动化部署
 - 实时流式聊天响应
 - 文字转语音(Dify支持多种音色选择)
 - Markdown 支持（包含代码高亮）
@@ -64,6 +64,7 @@ npm run dev
 ```bash
 npm run build
 ```
+如果你想要部署上线，把.env环境变量中加入你自己的dify服务器地址以及api即可完成快速的vercel自动化部署。
 
 ## 项目结构
 
