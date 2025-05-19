@@ -124,12 +124,10 @@ class ApiClient {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${API_CONFIG.TOKEN}`,
-        'Accept': 'text/event-stream',
-        'Origin': window.location.origin,
-        'Access-Control-Allow-Origin': '*'
+        'Accept': 'text/event-stream'
       },
       mode: 'cors',
-      credentials: 'omit',
+      credentials: 'include',
       body: JSON.stringify(params)
     })
       .then(this.handleStreamResponse(onMessage, onThought, onFile, onComplete, onError))
