@@ -37,7 +37,7 @@ web端对话截图：
 1. 克隆仓库
 
 ```bash
-git clone https://github.com/your-username/dify-chat.git
+git clone https://github.com/LeeAirQ/Dify-Web.git
 cd dify-chat
 ```
 
