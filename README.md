@@ -4,6 +4,7 @@
 - 基于 Vue 3、TypeScript 和 Element Plus 构建的现代化 Dify AI 聊天界面。
 - 作者: [liheng-Henrylee](https://github.com/airleeq)
 - 联系微信: Airlee1025
+- 如果你有开发基础和新的想法，加我给你仓库权限上传代码，一起持续改进这个项目
 - 该项目支持界面自适应web端和手机端，并且支持实时流式聊天响应、Markdown支持（TODO：代码高亮）。
 
 web端截图：
